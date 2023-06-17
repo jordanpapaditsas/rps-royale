@@ -9,6 +9,6 @@ The player has to choose one option among the rock, paper, and scissors.
 A random option will be generated from the computer’s side and the one who wins will get one point every time.
 
 ## Plans  
-- Create the backend
+- Create the mechanism
 - Add a responsive UI
 - Deploy it in Github
