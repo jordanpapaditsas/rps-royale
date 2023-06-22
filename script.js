@@ -1,7 +1,7 @@
-
+// Initializing variables
 const computerSelection = getComputerChoice();
 const playerSelection = "Player";
-let result = "";
+let result;
 
 
 // Getting a random choice for the computers turn.
@@ -10,9 +10,7 @@ function getComputerChoice() {
   return compChoice[Math.floor(Math.random() * compChoice.length)];
 }
 
-  
-
-// Starts the round and checking each statement to define a winner.
+// Receives input from user and from computer and defines the winner.
 function playRound(playerSelection, computerSelection) {
   playerSelection = prompt("Please choose between: \"Rock\" \"Paper\" \"Scissors\"").toUpperCase().toLowerCase();
   computerSelection = getComputerChoice();
@@ -21,43 +19,50 @@ function playRound(playerSelection, computerSelection) {
   if ((playerSelection === "rock" && computerSelection === "rock") ||
   (playerSelection === "paper" && computerSelection === "paper") ||
   (playerSelection === "scissors" && computerSelection === "scissors")) {
-    return  result = "";
+    return  `${result = "It's a tie!"}`;
 
   } else if ((playerSelection === "rock" && computerSelection === "paper") ||
   (playerSelection === "paper" && computerSelection === "scissors") ||
   (playerSelection === "scissors" && computerSelection === "rock")) {
-    return `${result = "Computer wins!"}`;
+    return `${result = "Computer wins the round!"}`;
 
   } else if ((playerSelection === "rock" && computerSelection === "scissors") ||
   (playerSelection === "paper" && computerSelection === "rock") ||
   (playerSelection === "scissors" && computerSelection === "paper")) {
-    return `${result = "Player wins!"}`;
+    return `${result = "Player wins the round!"}`;
   } else {
-    return result = "Invalid choice";
+    return console.log(result = "Invalid choice");
   }
 }
 
+// Looping till the player or the computer scores 5 wins. Keeps track of the total score.
 function game() {
   let playerScore = 0;
   let computerScore = 0;
+  let player = "Player";
+  let computer = "Computer";
   
-  while (playerScore <= 4 || computerScore <= 4) {
+  while (playerScore <= 4 && computerScore <= 4) {
     playRound(playerSelection, computerSelection);
-    if (result === "Computer wins!") {
+    if (result === "Computer wins the round!") {
       computerScore++;
       console.log(`${result} Score: ${computerScore}`);
-    } else if (result === "Player wins!") {
+    } else if (result === "Player wins the round!") {
       playerScore++;
       console.log(`${result} Score: ${playerScore}`);
-    } else if (result === "") {
-      console.log(`${result} Its a tie!\n Player's score: ${playerScore}\n Computer's score: ${computerScore}`);
+    } else if (result === "It's a tie!") {
+      console.log(`${result} \n Player's score: ${playerScore}\n Computer's score: ${computerScore}`);
     } 
   }
-  return false;
+  if (playerScore === 5 && computerScore < 5) {
+    console.log(`Match is over, ${player} won!`);
+  } else if (computerScore === 5 && playerScore < 5) {
+    console.log(`Match is over, ${computer} won!`);
+  }
 }
 
-
-
-console.log(playRound(playerSelection, computerSelection));
+// Calling function to start
 game();
+
+
 
