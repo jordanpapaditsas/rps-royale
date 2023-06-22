@@ -1,4 +1,4 @@
-# rock-paper-scissors-app
+# Rock-Paper-Scissors App
 
 ## Description  
 Rock, paper, and scissors game is a simple fun game in which both the players have to make  
