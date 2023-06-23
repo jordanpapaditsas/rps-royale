@@ -10,7 +10,7 @@ function getComputerChoice() {
   return compChoice[Math.floor(Math.random() * compChoice.length)];
 }
 
-// Receives input from user and from computer and defines the winner.
+// Receives input from the user, comparing the value with the computers value, and determines the winner.
 function playRound(playerSelection, computerSelection) {
   playerSelection = prompt("Please choose between: \"Rock\" \"Paper\" \"Scissors\"").toUpperCase().toLowerCase();
   computerSelection = getComputerChoice();
@@ -35,12 +35,12 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-// Looping till the player or the computer scores 5 wins. Keeps track of the total score.
+// Loops till the player or the computer scores 5 wins. Keeps track of the score.
 function game() {
   let playerScore = 0;
   let computerScore = 0;
-  let player = "Player";
-  let computer = "Computer";
+  const player = "Player";
+  const computer = "Computer";
   
   while (playerScore <= 4 && computerScore <= 4) {
     playRound(playerSelection, computerSelection);
@@ -55,13 +55,15 @@ function game() {
     } 
   }
   if (playerScore === 5 && computerScore < 5) {
-    console.log(`Match is over, ${player} won!`);
+    console.log(`Match is over, ${player} won! \n 
+    Player's score: ${playerScore} \n Computer's score: ${computerScore}`);
   } else if (computerScore === 5 && playerScore < 5) {
-    console.log(`Match is over, ${computer} won!`);
+    console.log(`Match is over, ${computer} won! \n
+    Player's score: ${playerScore} \n Computer's score: ${computerScore}`);
   }
 }
 
-// Calling function to start
+// Calling function to start the game.
 game();
 
 
