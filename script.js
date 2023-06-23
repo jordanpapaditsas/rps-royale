@@ -12,7 +12,8 @@ function getComputerChoice() {
 
 // Receives input from the user, comparing the value with the computers value, and determines the winner.
 function playRound(playerSelection, computerSelection) {
-  playerSelection = prompt("Please choose between: \"Rock\" \"Paper\" \"Scissors\"").toUpperCase().toLowerCase();
+  playerSelection = prompt(
+    "Please choose between: \"Rock\" \"Paper\" \"Scissors\"").toUpperCase().toLowerCase();
   computerSelection = getComputerChoice();
   
   console.log("Computer gets: " + " " + computerSelection + "\n" 
@@ -53,21 +54,20 @@ function startGame() {
       playerScore++;
       console.log(`${result} Score: ${playerScore}`);
     } else if (result === "It's a tie!") {
-      console.log(`${result} \n Player's score: ${playerScore} \n 
-      Computer's score: ${computerScore}`);
+      console.log(`${result}`);
     } 
   }
   if (playerScore === 5 && computerScore < 5) {
-    console.log(`Match is over, ${player} won! \n 
-    Player's score: ${playerScore} \n Computer's score: ${computerScore}`);
+    console.log(`Match is over, ${player} won! 
+    Player's score: ${playerScore}\n    Computer's score: ${computerScore}`);
   } else if (computerScore === 5 && playerScore < 5) {
-    console.log(`Match is over, ${computer} won! \n
-    Player's score: ${playerScore} \n Computer's score: ${computerScore}`);
+    console.log(`Match is over, ${computer} won!
+    Player's score: ${playerScore}\n    Computer's score: ${computerScore}`);
   }
 }
 
 // Calling function to start the game.
-game();
+startGame();
 
 
 
