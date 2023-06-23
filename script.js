@@ -14,7 +14,9 @@ function getComputerChoice() {
 function playRound(playerSelection, computerSelection) {
   playerSelection = prompt("Please choose between: \"Rock\" \"Paper\" \"Scissors\"").toUpperCase().toLowerCase();
   computerSelection = getComputerChoice();
-  console.log("Computer gets: " + " " + computerSelection + "\n" + "Player throws: " + " " + playerSelection);
+  
+  console.log("Computer gets: " + " " + computerSelection + "\n" 
+  + "Player throws: " + " " + playerSelection);
   
   if ((playerSelection === "rock" && computerSelection === "rock") ||
   (playerSelection === "paper" && computerSelection === "paper") ||
@@ -36,7 +38,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 // Loops till the player or the computer scores 5 wins. Keeps track of the score.
-function game() {
+function startGame() {
   let playerScore = 0;
   let computerScore = 0;
   const player = "Player";
@@ -51,7 +53,8 @@ function game() {
       playerScore++;
       console.log(`${result} Score: ${playerScore}`);
     } else if (result === "It's a tie!") {
-      console.log(`${result} \n Player's score: ${playerScore}\n Computer's score: ${computerScore}`);
+      console.log(`${result} \n Player's score: ${playerScore} \n 
+      Computer's score: ${computerScore}`);
     } 
   }
   if (playerScore === 5 && computerScore < 5) {
