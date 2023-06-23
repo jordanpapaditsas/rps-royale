@@ -1,9 +1,9 @@
 # Rock-Paper-Scissors App
 
 ## Description  
-Rock, paper, and scissors game is a simple fun game in which both the players have to make  
-a rock, paper, or scissors. 
-It has only two possible outcomes:  **tie**, or a **win** for one player and a **loss** for the other player.  
+The Rock, Paper, and Scissors game is an enjoyable and straightforward game where both players choose between:  
+***rock***, ***paper***, or ***scissors***. It results in only two possible outcomes: 
+a ***tie***, or a ***win*** for one player and a ***loss*** for the other player.  
 
 ## Rules  
 In this game, the player must select one option from the following: **rock**, **paper**, or **scissors**.   
@@ -20,7 +20,7 @@ In the event of a ***tie***, no points will be awarded.
    ```
 2. Navigate to the project's folder
    ```bash
-   cd rock-paper-scissors 
+   cd rock-paper-scissors-app 
    ```
 3. After navigating to the project's folder, you can run the application by opening the index.html file  
 in your preferred web browser.   
