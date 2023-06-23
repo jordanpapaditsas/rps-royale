@@ -3,7 +3,6 @@ const computerSelection = getComputerChoice();
 const playerSelection = "Player";
 let result;
 
-
 // Getting a random choice for the computers turn.
 function getComputerChoice() {
   let compChoice = ["rock", "paper", "scissors"];
