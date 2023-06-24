@@ -26,13 +26,13 @@ In the event of a ***tie***, no points will be awarded.
 in your preferred web browser.   
    
 ## Plans  
-- Create a responsive UI.
-- Connect UI with JavaScript code.
+- Create a responsive UI
+- Connect UI with JavaScript code
 
 ## Features
 <ul>
-  <li>Interactive gameplay against the computer.</li>
-  <li>User-friendly interface with visual representations of choices.</li>
-  <li>Real-time score tracking.</li>
-  <li>Random computer moves.</li>
+  <li>Interactive gameplay against the computer</li>
+  <li>User-friendly interface with visual representations of choices</li>
+  <li>Real-time score tracking</li>
+  <li>Random computer moves</li>
 </ul>
