@@ -5,7 +5,7 @@ let result;
 
 // Getting a random choice for the computers turn.
 function getComputerChoice() {
-  let compChoice = ["rock", "paper", "scissors"];
+  const compChoice = ["rock", "paper", "scissors"];
   return compChoice[Math.floor(Math.random() * compChoice.length)];
 }
 
