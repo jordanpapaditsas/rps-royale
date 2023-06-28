@@ -23,7 +23,7 @@ In the event of a ***tie***, no points will be awarded.
    cd rock-paper-scissors-app 
    ```
 3. After navigating to the project's folder, you can run the application by opening the index.html file  
-in your preferred web browser. 
+in your preferred web browser 
    
 ## Plans  
 - Create a responsive UI
