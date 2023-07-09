@@ -53,17 +53,17 @@ img {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 #choiceContainer p {
   width: 90%;
+  text-indent: 1rem;
 }
 
 #rock, #paper, #scissors {
   border-radius: 1rem;
   margin-left: 6rem;
-  padding: 0;
   background: none;
   transition: 0.2s ease-in-out;
 }
@@ -101,6 +101,7 @@ img {
 
 #reset {
   text-align: center;
+
 }
 
 #resetBtn {
