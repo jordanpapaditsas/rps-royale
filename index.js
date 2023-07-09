@@ -100,8 +100,6 @@ function resetGame() {
   roundResultsText.innerHTML = roundResults;
 };
 
-// Style for the text results
-roundResultsText.style.fontSize = '2rem';
 
 
 
