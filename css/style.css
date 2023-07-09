@@ -5,7 +5,7 @@
 }
 
 body {
-  height: calc(100vh);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,6 @@ body {
   background-size: calc(30rem);
   background-repeat: no-repeat;
   background-color: #9fc5e9;
-
 }
 
 img {
@@ -22,25 +21,20 @@ img {
   height: auto;
 }
 
-#choiceContainer p {
-  width: 90%;
-}
-
 #title {
   text-align: center;
   font-size: 3rem;
-  margin-top: -3rem;
 }
 
-#paper {
+#paperSpan {
   color: white;
 }
 
-#rock {
+#rockSpan {
   color: rgb(98, 98, 102);
 }
 
-#scissors {
+#scissorsSpan {
   color: rgb(170, 79, 13);
 }
 
@@ -62,73 +56,51 @@ img {
   margin-top: 6rem;
 }
 
-#rockDiv {
-  flex: 1;
-  text-align: center;
-  transition: transform 0.2s ease-in-out;
+#choiceContainer p {
+  width: 90%;
 }
 
-#rockDiv:hover {
-  transform: scale(1.1);
-}
-
-#paperDiv {
-  flex: 1;
-  text-align: center;
-  transition: transform 0.2s ease-in-out;
-}
-
-#paperDiv:hover {
-  transform: scale(1.1);
-}
-
-#scissorsDiv {
-  flex: 1;
-  text-align: center;
-  transition: transform 0.2s ease-in-out; 
-}
-
-#scissorsDiv:hover {
-  transform: scale(1.1);
-}
-
-#rockBtn, #paperBtn, #scissorsBtn {
+#rock, #paper, #scissors {
   border-radius: 1rem;
   margin-left: 6rem;
+  padding: 0;
+  background: none;
+  transition: 0.2s ease-in-out;
 }
 
-#rockBtn {
+#rock {
   background-color: gray;
   color: white;
 }
 
-#paperBtn {
+#paper {
   background-color: white;
 }
 
-#scissorsBtn {
+#scissors {
   background-color: chocolate;
   color: white;
 }
 
+#rock:hover, #paper:hover, #scissors:hover {
+  transform: scale(1.1);
+}
+
+#roundResults {
+  position: relative;
+  top: 5rem;
+  left: 31rem;
+}
+
 #score {
   position: relative;
-  top: 4rem;
-  text-align: center;
-  margin-top: 1rem;
+  text-align: right;
   font-size: 3rem;
+  top: 3rem;
 }
-
-
-#paperBtn:hover {
-  color: black;
-}
-
 
 #reset {
   text-align: center;
-  margin-top: 10rem;
-  margin-left: 6rem;
 }
 
 #resetBtn {
@@ -150,5 +122,7 @@ img {
   transition: 0.3s all ease-in-out;
   transform: scale(1.1);
 }
+
+
 
 
