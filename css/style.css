@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-image: url(../rock-paper-scissors/assets/background-rps.jpg);
+  background-image: url(../assets/background-rps.jpg);
   background-size: calc(30rem);
   background-repeat: no-repeat;
   background-color: #9fc5e9;
