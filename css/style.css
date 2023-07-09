@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: calc(100vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(/assets/background-rps.jpg);
+  background-size: calc(30rem);
+  background-repeat: no-repeat;
+  background-color: #9fc5e9;
+
+}
+
+img {
+  width: 8rem;
+  height: auto;
+}
+
+#choiceContainer p {
+  width: 90%;
+}
+
+#title {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: -3rem;
+}
+
+#paper {
+  color: white;
+}
+
+#rock {
+  color: rgb(98, 98, 102);
+}
+
+#scissors {
+  color: rgb(170, 79, 13);
+}
+
+#weaponChoice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+  font-size: 1.3rem;
+  margin-left: 6rem;
+}
+
+#choiceContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+}
+
+#rockDiv {
+  flex: 1;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+#rockDiv:hover {
+  transform: scale(1.1);
+}
+
+#paperDiv {
+  flex: 1;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+#paperDiv:hover {
+  transform: scale(1.1);
+}
+
+#scissorsDiv {
+  flex: 1;
+  text-align: center;
+  transition: transform 0.2s ease-in-out; 
+}
+
+#scissorsDiv:hover {
+  transform: scale(1.1);
+}
+
+#rockBtn, #paperBtn, #scissorsBtn {
+  border-radius: 1rem;
+  margin-left: 6rem;
+}
+
+#rockBtn {
+  background-color: gray;
+  color: white;
+}
+
+#paperBtn {
+  background-color: white;
+}
+
+#scissorsBtn {
+  background-color: chocolate;
+  color: white;
+}
+
+#score {
+  position: relative;
+  top: 4rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 3rem;
+}
+
+
+#paperBtn:hover {
+  color: black;
+}
+
+
+#reset {
+  text-align: center;
+  margin-top: 10rem;
+  margin-left: 6rem;
+}
+
+#resetBtn {
+  font-size: 3rem;
+  background-color: black;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: white;
+  transition: 0.3s all ease-in-out;
+}
+
+#resetBtn:hover {
+  transition: 0.3s;
+  transform: scale(1) translate3d(0, 0, 0);
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  transform: scale(1.1);
+}
+
+

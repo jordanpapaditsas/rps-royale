@@ -4,10 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="/css/style.css">
+
 </head>
 <body>
-  
+  <div id="container">
+    <h1 id="title">Welcome to the <span id="rock">Rock</span> 
+    <span id="paper">Paper</span> and <span id="scissors">Scissors</span> Deathmatch</h1>
 
-  <script src="/script.js"></script>
+    <div id="weaponChoice">
+      <h2 id="h2Choice">Please choose your weapon wisely!</p>
+    </div>
+
+    <div id="choiceContainer">
+      <div id="rockDiv">
+        <button id="rockBtn">
+          <img src="/assets/rock.jpg" alt="ROCK">
+          <p>Pick me up, and I will bring the Stone age back!</p>
+        </button>
+      </div>
+      <div id="paperDiv">
+        <button id="paperBtn">
+          <img src="/assets/paper.jpg" alt="PAPER">
+          <p>If you choose me, you're gonna write your win in History!</p>
+        </button>
+      </div>
+      <div id="scissorsDiv">
+        <button id="scissorsBtn">
+          <img src="/assets/scissors.png" alt="SCISSORS">
+          <p>Choose me, and i will cut off the chances of losing!</p>
+        </button>
+      </div>
+    </div>
+
+    <div id="roundResults">
+      <p id="fightRoundResults"></p>
+    </div>
+
+    <div id="score">
+      <p id="player"><p>
+      <p id="computer"><p>
+      <p id="rounds"><p>
+    </div>
+
+    <div id="reset">
+      <button id="resetBtn">Play again</button>
+    </div>
+  </div>
+  
+  <script src="index.js"></script>
 </body>
 </html>
