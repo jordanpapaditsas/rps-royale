@@ -100,6 +100,7 @@ img {
   padding: 1rem;
   border-radius: 1rem;
   width: 15rem;
+  color: white;
 }
 
 #paper {
@@ -114,6 +115,7 @@ img {
   padding: 1rem;
   border-radius: 1rem;
   width: 15rem;
+  color: white;
 }
 
 #rock:hover, #paper:hover, #scissors:hover  {
@@ -270,7 +272,8 @@ img {
 @media (max-width: 528px) {
 
   #rock, #paper, #scissors{
-    width: 9rem;
+    width: 9.5rem;
+    height: 7.5rem;
   }
 
   body, html {
@@ -284,7 +287,7 @@ img {
   #score {
     flex-wrap: nowrap;
     flex-direction: column;
-    gap: .7rem;
+    gap: .2rem;
   }
 
   #counter {
@@ -304,6 +307,7 @@ img {
   #roundResults {
     text-align: center;
     font-size: 1.1rem;
+    margin-bottom: -2rem;
   }
 
   #startContainer {
@@ -311,6 +315,7 @@ img {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5rem;
   }
 
   #title {
@@ -324,15 +329,20 @@ img {
 
   body {
     background-position: bottom;
+    background-size: 14rem;
+    
   }
   
   #pressButton {
-    margin-bottom: 5.5rem;
+    position: relative;
+    top: 2rem;
   }
 
   #newgameBtn {
     font-size: 1rem;
     width: 10rem;
     padding: 0.5rem;
+    position: relative;
+    bottom: 7.5rem;
   }
 }

@@ -29,7 +29,6 @@ let computerScore = 0;
 let tieScore = 0;
 let roundResults = '';
 
-
 // Event listeners
 newGame.addEventListener('click', startGame);
 rockBtn.addEventListener('click', playRound);
@@ -88,7 +87,6 @@ function playRound(event) {
   roundCounterText.innerHTML = '<b>Round:</b> ' + roundCounter;
   if (playerScore === 5 || computerScore === 5 || tieScore === 5) {
     declareWinner();
-    resetGame();
   };
 };
 
