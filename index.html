@@ -3,49 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock Paper Scissors</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Rock Paper Scissors App</title>
+ <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
-  <div id="container">
-    <div class="title-container">
-      <h1 id="title">Welcome to the <span id="rockSpan">Rock</span> 
-      <span id="paperSpan">Paper</span> and <span id="scissorsSpan">Scissors</span> Deathmatch</h1>
-    </div> 
-    <div id="weaponChoice">
-      <h2 id="h2Choice">The first one to reach 5 kills wins the game.<br>Please choose your weapon wisely!</p>
+    <div id="startContainer">
+      <div id="welcomeTitle">
+        <h1 id="title">Welcome to the <span id="rockSpan">Rock</span><span id="paperSpan"> Paper</span> and <span id="scissorsSpan">Scissors</span> Deathmatch
+        </h1>
+        <p id="instructionsTitle"><u><strong>Instructions</strong></u></p>
+        <p id="rules">In this game, the <strong>Player</strong> must select one option from the following: rock, paper, or scissors images.<br><br>
+          The <Strong>Computer</Strong> will generate a random option, and the <strong>Player</strong> or <strong>Computer</strong> will earn one point for each round won.
+          You need to be choosing rock, paper or scissors every round just by clicking on the images.
+          The first one to reach a score of 5 points will be declared the winner.<br>
+          In the event of a tie, no points will be awarded.</p>
+      </div>
+      <div id="newgameBtnDiv">
+        <p id="pressButton">Press the button to start the game</p>
+        <button id="newgameBtn">New Game</button>
+      </div>
     </div>
 
-    <div id="choiceContainer">
-      <button id="rock">
-        <img src="assets/rock.jpg" alt="ROCK">
-        <p>Pick me up, and I will bring the Stone age back!</p>
-      </button>
-      <button id="paper">
-        <img src="assets/paper.jpg" alt="PAPER">
-        <p>If you choose me, you're gonna write your win in History!</p>
-      </button>
-      <button id="scissors">
-        <img src="assets/scissors.png" alt="SCISSORS">
-        <p>Choose me, and i will cut off the chances of losing!</p>
-      </button>
-    </div>
-
-    <div id="roundResults"></div>
-
-    <div id="score">
-      <p id="player">Player: 0<p>
-      <p id="computer">Computer: 0<p>
-      <p id="tie">Tie: 0</p>
+    <div id="container">
       <p id="counter">Round: 1</p>
+        <div id="score">
+          <p><u>Score:</u></p>
+          <p id="player">Player points: 0<p>
+          <p id="computer">Computer points: 0<p>
+          <p id="tie">Tie points: 0</p>
+        </div>
+      </div>
+
+      <div id="roundResults"></div>
+  
+      <div id="choiceContainer">
+        <button id="rock">
+          <img src="assets/rock.jpg" alt="ROCK">
+          <p>Pick me up, and I will bring the Stone age back!</p>
+        </button>
+        <button id="paper">
+          <img src="assets/paper.jpg" alt="PAPER">
+          <p>If you choose me, you're gonna write your win in History!</p>
+        </button>
+        <button id="scissors">
+          <img src="assets/scissors.png" alt="SCISSORS">
+          <p>Choose me, and i will cut off the chances of losing!</p>
+        </button>
+      </div>
     </div>
 
-    <div id="reset">
-      <button id="resetBtn">Play again</button>
+    <div id="resetDiv">
+      <button id="resetBtn">Reset game</button>
     </div>
-
-  </div>
-  <script src="index.js"></script>
+  <script src="/index.js"></script>
 </body>
 </html>

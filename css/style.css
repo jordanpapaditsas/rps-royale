@@ -8,209 +8,174 @@ button * {
   pointer-events: none;
 }
 
-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+
+body, html {
+  min-height: 100vh;
   background-image: url(../assets/background-rps.jpg);
-  background-size: calc(30rem);
   background-repeat: no-repeat;
+  background-size: calc(20rem);
   background-color: #9fc5e9;
 }
 
-img {
-  width: 7rem;
-  height: auto;
+#welcomeTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
 }
 
-#title {
-  text-align: center;
-  font-size: 3rem;
+#instructionsTitle {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+#pressButton {
+  font-size: 1.5rem;
+  position: relative;
+  top: 6rem;
+}
+
+#rules {
+  font-size: 1.3rem;
+  width: 40%;
+  margin-top: 2rem;
+}
+
+#rockSpan {
+  color: gray;
 }
 
 #paperSpan {
   color: white;
 }
 
-#rockSpan {
-  color: rgb(98, 98, 102);
-}
-
 #scissorsSpan {
-  color: rgb(170, 79, 13);
+  color: chocolate;
 }
 
-#weaponChoice {
+#newgameBtnDiv  {
+  text-align: center;
+}
+
+#newgameBtn {
+  font-size: 3rem;
+  width: 20rem;
+  margin-top: 10rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  background-color: black;
+}
+
+#newgameBtn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* Start game settings */
+img {
+  width: 5rem;
+  height: auto;
+}
+
+#container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7rem;
-  font-size: 1.3rem;
-  margin-left: 6rem;
+  flex-wrap: wrap;
 }
 
 #choiceContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  flex-wrap: wrap;
-  margin-top: 4rem;
-}
-
-#choiceContainer p {
-  width: 90%;
-  text-indent: 1rem;
-}
-
-#rock, #paper, #scissors {
-  border-radius: 1rem;
-  margin-left: 6rem;
-  background: none;
-  transition: 0.2s ease-in-out;
+  margin-top: 15rem;
+  gap: 3rem;
 }
 
 #rock {
   background-color: gray;
-  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 15rem;
 }
 
 #paper {
-  background-color: white;
+  background-color: rgb(248, 244, 244);
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 15rem;
 }
 
 #scissors {
-  background-color: chocolate;
+  background-color: rgb(210, 105, 30);
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 15rem;
+}
+
+#rock:hover {
+ transform: scale(1.2);
+ box-shadow: 5px 5px 5px 5px rgb(102, 101, 101);
+}
+
+#paper:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 5px 5px rgb(240, 237, 237);
+}
+
+#scissors:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 5px 5px rgb(210, 105, 33);
+}
+
+#score {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+#counter {
+  font-size: 2rem;
+  margin-left: 5rem;
+
+}
+
+#resetBtn {
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
   color: white;
+  background-color: black;
+  text-align: center;
 }
 
-#rock:hover, #paper:hover, #scissors:hover {
-  transform: scale(1.1);
+#resetBtn:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
-#roundResults {
+#resetDiv {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  position: relative;
-  top: 6rem;
+  margin-top: 10rem;
+}
+
+#roundResults {
   font-size: 2rem;
-}
-
-#score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  text-align: right;
-  font-size: 3rem;
-  top: 3rem;
-}
-
-#reset {
-  text-align: center;
-}
-
-#resetBtn {
-  font-size: 3rem;
-  background-color: black;
-  border-radius: 1rem;
-  padding: 1rem;
-  color: white;
-  transition: 0.3s all ease-in-out;
-}
-
-#resetBtn:hover {
-  transition: 0.3s;
-  transform: scale(1) translate3d(0, 0, 0);
-  background-color: black;
-  color: white;
-  border-radius: 1rem;
-  cursor: pointer;
-  transition: 0.3s all ease-in-out;
-  transform: scale(1.1);
-}
-
-/* Media Queries */
-
-@media (max-width: 1900px) {
-  body {
-    background-image: none;
-  }
-}
-
-
-/* Media medium sizes */
-@media (max-width: 1261px) {
-  #choiceContainer {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  #resetBtn {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-  }
-
-  #score {
-    font-size: 2rem;
-    margin-right: 2rem;
-  }
-  
-}
-
-@media (max-width: 1107px) {
-
-  #resetBtn {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    margin-left: 4.5rem;
-  }
-
-  #roundResults {
-    font-size: 1.4rem;
-    left: 3.5rem;
-  }
-}
-
-@media (max-width: 764px) {
-  #score {
-    font-size: 1.3rem;
-    margin-right: 1rem;
-  }
-
-  #roundResults {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-
-  #resetBtn {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 580px) {
-  #score {
-    font-size: 1rem;
-  }
-
-  #roundResults {
-    font-size: 1rem;
-    margin-bottom: 3rem;
-  }
-}
-
-@media (max-width: 400px) {
-  #score {
-    font-size: .9rem;
-    margin-right: -.5rem;
-  }
-
-  #roundResults {
-    margin-bottom: 6rem;
-  }
-
-  #resetBtn {
-    font-size: .9rem;
-  }
+  top: 5rem;
 }
