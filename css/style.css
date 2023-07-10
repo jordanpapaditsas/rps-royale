@@ -8,7 +8,6 @@ button * {
   pointer-events: none;
 }
 
-
 body {
   min-height: 100vh;
   background-image: url(../assets/background-rps.jpg);
@@ -117,19 +116,9 @@ img {
   width: 15rem;
 }
 
-#rock:hover {
+#rock:hover, #paper:hover, #scissors:hover  {
  transform: scale(1.2);
  box-shadow: 5px 5px 5px 5px rgb(102, 101, 101);
-}
-
-#paper:hover {
-  transform: scale(1.2);
-  box-shadow: 5px 5px 5px 5px rgb(240, 237, 237);
-}
-
-#scissors:hover {
-  transform: scale(1.2);
-  box-shadow: 5px 5px 5px 5px rgb(210, 105, 33);
 }
 
 #score {
@@ -345,5 +334,4 @@ img {
     width: 10rem;
     padding: 0.5rem;
   }
-
 }

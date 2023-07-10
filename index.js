@@ -88,6 +88,7 @@ function playRound(event) {
   roundCounterText.innerHTML = '<b>Round:</b> ' + roundCounter;
   if (playerScore === 5 || computerScore === 5 || tieScore === 5) {
     declareWinner();
+    resetGame();
   };
 };
 
