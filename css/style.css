@@ -9,7 +9,7 @@ button * {
 }
 
 
-body, html {
+body {
   min-height: 100vh;
   background-image: url(../assets/background-rps.jpg);
   background-repeat: no-repeat;
@@ -144,9 +144,8 @@ img {
 }
 
 #counter {
-  font-size: 2rem;
-  margin-left: 5rem;
-
+  order: 1;
+  font-size: 3rem;
 }
 
 #resetBtn {
@@ -178,4 +177,173 @@ img {
   align-items: center;
   position: relative;
   top: 5rem;
+}
+
+@media (max-width: 1110px) {
+
+  body {
+    background-size: 12rem;
+  }
+
+  #welcomeTitle {
+    font-size: 1rem;
+  }
+
+  #rules {
+    width: 40rem;
+  }
+
+  #newgameBtn {
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  body {
+    background-size: 15rem;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+
+  #rules {
+    width: 35rem;
+  }
+
+  #newgameBtn {
+    width: 18rem;
+    font-size: 1.8rem;
+  }
+
+  #score {
+    font-size: 1.5rem;
+  }
+
+  #counter {
+    font-size: 1.8rem;
+  }
+
+  img {
+    width: 3rem;
+  }
+
+  #choiceContainer {
+    margin-top: 10rem;
+  }
+
+  #resetBtn {
+    margin-top: -3rem;
+  }
+
+  #roundResults {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 730px) {
+
+  #title {
+    width: 50rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #instructionsTitle {
+    font-size: 1.2rem;
+  }
+
+  #rules {
+    font-size: 1.2rem;
+  }
+
+  #newgameBtn {
+    font-size: 1rem;
+    width: 15rem;
+  }
+
+  #score {
+    font-size: 1rem;
+  }
+
+  #roundResults {
+    text-align: center;
+  }
+}
+
+@media (max-width: 528px) {
+
+  #rock, #paper, #scissors {
+    width: 10rem;
+  }
+
+  body, html {
+    flex-wrap: nowrap;
+  }
+
+  #container {
+    flex-wrap: nowrap;
+  }
+
+  #score {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: .7rem;
+  }
+
+  #counter {
+    font-size: 1.3rem;
+  }
+
+  #resetBtn {
+    position: relative;
+    bottom: 7rem;
+    font-size: 1rem;
+  }
+
+  #choiceContainer {
+    margin-bottom: 2rem;
+  }
+
+  #roundResults {
+    text-align: center;
+  }
+
+  #startContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #title {
+    font-size: 1.5rem;
+    width: 50%;
+  }
+
+  #rules {
+    width: 70%;
+  }
+
+  body {
+    background-position: bottom;
+  }
+  
+  #pressButton {
+    margin-bottom: 5.5rem;
+  }
+
+  #newgameBtn {
+    font-size: 1rem;
+    width: 10rem;
+    padding: 0.5rem;
+  }
+
 }

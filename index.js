@@ -4,6 +4,8 @@ const startContainer = document.querySelector('#startContainer');
 const container = document.querySelector('#container');
 const choiceContainer = document.querySelector('#choiceContainer');
 const resetDiv = document.querySelector('#resetDiv');
+const body = document.querySelector('body');
+
 
 const rockBtn = document.querySelector('#rock');
 const paperBtn = document.querySelector('#paper');
@@ -41,6 +43,9 @@ function startGame() {
   container.style.display = 'flex';
   choiceContainer.style.display = 'flex';
   resetDiv.style.display = 'flex';
+  body.style.display = 'flex';
+  body.style.flexDirection = 'column';
+  body.style.backgroundImage = 'none';
 };
 
 // Computers move 
@@ -80,7 +85,7 @@ function playRound(event) {
   };
 
   roundCounter++;
-  roundCounterText.textContent = 'Round: ' + roundCounter;
+  roundCounterText.innerHTML = '<b>Round:</b> ' + roundCounter;
   if (playerScore === 5 || computerScore === 5 || tieScore === 5) {
     declareWinner();
   };
@@ -107,10 +112,10 @@ function resetGame() {
   computerScore = 0;
   tieScore = 0;
 
-  roundCounterText.textContent = 'Round: ' + roundCounter;
-  playerScoreText.textContent = 'Player: ' + playerScore;
-  computerScoreText.textContent = 'Computer: ' + computerScore;
-  tieScoreText.textContent = 'Tie: ' + tieScore;
+  roundCounterText.innerHTML = '<b>Round:<b> ' + roundCounter;
+  playerScoreText.textContent = 'Player points: ' + playerScore;
+  computerScoreText.textContent = 'Computer points: ' + computerScore;
+  tieScoreText.textContent = 'Tie points: ' + tieScore;
   roundResultsText.innerHTML = roundResults;
 };
 
