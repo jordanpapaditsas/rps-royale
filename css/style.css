@@ -269,8 +269,8 @@ img {
 
 @media (max-width: 528px) {
 
-  #rock, #paper, #scissors {
-    width: 10rem;
+  #rock, #paper, #scissors{
+    width: 9rem;
   }
 
   body, html {
@@ -303,6 +303,7 @@ img {
 
   #roundResults {
     text-align: center;
+    font-size: 1.1rem;
   }
 
   #startContainer {
