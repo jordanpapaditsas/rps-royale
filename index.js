@@ -86,23 +86,34 @@ function playRound(event) {
   roundCounter++;
   roundCounterText.innerHTML = '<b>Round:</b> ' + roundCounter;
   if (playerScore === 5 || computerScore === 5 || tieScore === 5) {
-    declareWinner();
+    declareGameWinner();
+    // declareWinner(); 
   };
 };
 
-// Winner outcome
-function declareWinner() {
+function declareGameWinner() {
+  let winner = '';
   if (playerScore === 5) {
-    roundResultsText.innerHTML = 'You won the game!';
-  };
-  if (computerScore === 5) {
-    roundResultsText.innerHTML = 'Computer won the game!';
-    
-  };
-  if (tieScore === 5) {
-    roundResultsText.innerHTML = 'Its a draw!';
-  };
+    winner = 'You won the game!';
+  } else if (computerScore === 5) {
+    winner = 'Computer demolished you!';
+  } else if (tieScore === 5) {
+    winner = 'Its a draw!';
+  }
+
+  roundResultsText.innerHTML = `The match is over, ${winner}`;
+
+  roundCounter = 1;
+  playerScore = 0;
+  computerScore = 0;
+  tieScore = 0;
+
+  roundCounterText.innerHTML = '<b>Round:<b> ' + roundCounter;
+  playerScoreText.textContent = 'Player points: ' + playerScore;
+  computerScoreText.textContent = 'Computer points: ' + computerScore;
+  tieScoreText.textContent = 'Tie points: ' + tieScore;
 };
+
 
 // Resets the game
 function resetGame() {
@@ -118,3 +129,16 @@ function resetGame() {
   roundResultsText.innerHTML = roundResults;
 };
 
+
+// function declareWinner() {
+//   if (playerScore === 5) {
+//     roundResultsText.innerHTML = 'You won the game!';
+//   };
+//   if (computerScore === 5) {
+//     roundResultsText.innerHTML = 'Computer won the game!';
+    
+//   };
+//   if (tieScore === 5) {
+//     roundResultsText.innerHTML = 'Its a draw!';
+//   };
+// };
