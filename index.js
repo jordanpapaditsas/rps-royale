@@ -7,6 +7,7 @@ const resetDiv = document.querySelector('#resetDiv');
 const body = document.querySelector('body');
 
 
+const returnHomeBtn = document.querySelector('#homeBtn')
 const rockBtn = document.querySelector('#rock');
 const paperBtn = document.querySelector('#paper');
 const scissorsBtn = document.querySelector('#scissors');
@@ -16,6 +17,7 @@ let roundCounterText = document.querySelector('#counter');
 let playerScoreText = document.querySelector('#player');
 let computerScoreText = document.querySelector('#computer');
 let tieScoreText = document.querySelector('#tie');
+
 
 // Initializers
 container.style.display = 'none';
@@ -35,6 +37,18 @@ rockBtn.addEventListener('click', playRound);
 paperBtn.addEventListener('click', playRound);
 scissorsBtn.addEventListener('click', playRound);
 resetBtn.addEventListener('click', resetGame);
+returnHomeBtn.addEventListener('click', returnToHome);
+
+// Returns back to home page
+function returnToHome() {
+ container.style.display = 'none';
+ choiceContainer.style.display = 'none';
+ resetDiv.style.display = 'none';
+
+ startContainer.style.display = 'initial';
+ body.style.backgroundImage = '';
+ roundResultsText.style.display = 'none';
+};
 
 // Starts the game
 function startGame() {
@@ -45,6 +59,18 @@ function startGame() {
   body.style.display = 'flex';
   body.style.flexDirection = 'column';
   body.style.backgroundImage = 'none';
+  roundResultsText.style.display = '';
+  roundCounter = 1;
+  playerScore = 0;
+  computerScore = 0;
+  tieScore = 0;
+  roundResults = '';
+
+  roundCounterText.innerHTML = '<b>Round:<b> ' + roundCounter;
+  playerScoreText.textContent = 'Player points: ' + playerScore;
+  computerScoreText.textContent = 'Computer points: ' + computerScore;
+  tieScoreText.textContent = 'Tie points: ' + tieScore;
+  roundResultsText.innerHTML = roundResults;
 };
 
 // Computers move 
@@ -128,7 +154,6 @@ function resetGame() {
   tieScoreText.textContent = 'Tie points: ' + tieScore;
   roundResultsText.innerHTML = roundResults;
 };
-
 
 // function declareWinner() {
 //   if (playerScore === 5) {

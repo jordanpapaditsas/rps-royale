@@ -139,7 +139,7 @@ img {
   font-size: 3rem;
 }
 
-#resetBtn {
+#resetBtn, #homeBtn {
   font-size: 2rem;
   padding: 1rem;
   border-radius: 1rem;
@@ -148,7 +148,7 @@ img {
   text-align: center;
 }
 
-#resetBtn:hover {
+#resetBtn:hover, #homeBtn:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -158,6 +158,8 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
   margin-top: 10rem;
 }
 
@@ -229,7 +231,7 @@ img {
     margin-top: 10rem;
   }
 
-  #resetBtn {
+  #resetBtn, #homeBtn {
     margin-top: -3rem;
   }
 
@@ -297,6 +299,12 @@ img {
   #resetBtn {
     position: relative;
     bottom: 7rem;
+    font-size: 1rem;
+  }
+
+  #homeBtn {
+    position: relative;
+    bottom: 3rem;
     font-size: 1rem;
   }
 
