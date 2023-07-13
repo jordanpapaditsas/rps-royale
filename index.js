@@ -5,6 +5,7 @@ const container = document.querySelector('#container');
 const choiceContainer = document.querySelector('#choice-container');
 const resetDiv = document.querySelector('#reset-div');
 const body = document.querySelector('body');
+const copyright = document.querySelector('#copyright');
 
 
 const returnHomeBtn = document.querySelector('#home-btn')
@@ -45,9 +46,10 @@ function returnToHome() {
  choiceContainer.style.display = 'none';
  resetDiv.style.display = 'none';
 
- startContainer.style.display = 'initial';
+ startContainer.style.display = '';
  body.style.backgroundImage = '';
  roundResultsText.style.display = 'none';
+ copyright.style.display = 'flex';
 };
 
 // Starts the game
@@ -59,6 +61,10 @@ function startGame() {
   body.style.display = 'flex';
   body.style.flexDirection = 'column';
   body.style.backgroundImage = 'none';
+  copyright.style.display = 'none';
+
+
+
   roundResultsText.style.display = '';
   roundCounter = 1;
   playerScore = 0;

@@ -14,6 +14,10 @@ body {
   background-repeat: no-repeat;
   background-size: calc(20rem);
   background-color: #9fc5e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #welcome-title {
@@ -30,7 +34,7 @@ body {
   margin-top: 1.5rem;
 }
 
-#press-button {
+#press-button-text {
   font-size: 1.5rem;
   position: relative;
   top: 6rem;
@@ -61,7 +65,7 @@ body {
 #newgame-btn {
   font-size: 3rem;
   width: 20rem;
-  margin-top: 10rem;
+  margin-top: 12rem;
   padding: 1rem;
   border-radius: 1rem;
   color: white;
@@ -71,6 +75,16 @@ body {
 #newgame-btn:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+#copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+  font-size: 1.2rem;
+  position: relative;
+  top: 7rem;
 }
 
 /* Start game settings */
@@ -172,10 +186,30 @@ img {
   top: 5rem;
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1280px) {
+
+  #copyright {
+    display: flex;
+    flex: 1;
+    margin-bottom: 15rem;
+  }
+
+  #reset-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 1200px) {
 
   body {
     background-size: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
   #welcome-title {
@@ -195,6 +229,7 @@ img {
     display: flex;
     flex-wrap: wrap;
   }
+
 }
 
 @media (max-width: 1024px) {
@@ -241,7 +276,8 @@ img {
   }
 }
 
-@media (max-width: 730px) {
+/* Medium size devices */
+@media (max-width: 995px) {
 
   #title {
     width: 50rem;
@@ -255,6 +291,7 @@ img {
 
   #rules {
     font-size: 1.2rem;
+    width: 45%;
   }
 
   #newgame-btn {
@@ -269,9 +306,15 @@ img {
   #round-results {
     text-align: center;
   }
+  
+  body {
+    background-size: 12rem;
+  }
+
 }
 
-@media (max-width: 528px) {
+/* Small size devices */
+@media (max-width: 530px) {
 
   #rock, #paper, #scissors{
     width: 9.5rem;
@@ -321,29 +364,33 @@ img {
   #start-container {
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 5rem;
+    flex-wrap: wrap;
   }
 
   #title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     width: 50%;
   }
 
   #rules {
-    width: 70%;
+    width: 65%;
+    font-size: 1.1rem;
   }
 
   body {
     background-position: bottom;
-    background-size: 14rem;
-    
+    background-size: 11rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
   }
   
-  #press-button {
+  #press-button-text {
     position: relative;
-    top: 2rem;
+    top: 4rem;
   }
 
   #newgame-btn {
@@ -351,6 +398,28 @@ img {
     width: 10rem;
     padding: 0.5rem;
     position: relative;
-    bottom: 7.5rem;
+    bottom: 3rem;
+  }
+
+  #copyright {
+    position: absolute;
+    top: 51rem;
+  }
+}
+
+/* Extra */
+@media (max-width: 425px) {
+  
+  body {
+    background-size: 10rem;
+  }
+
+  #rules {
+    width: 90%;
+  }
+
+  #copyright {
+    font-size: .8rem;
+    margin-top: 0.5rem;
   }
 }
