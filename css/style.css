@@ -16,7 +16,7 @@ body {
   background-color: #9fc5e9;
 }
 
-#welcomeTitle {
+#welcome-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,12 +25,12 @@ body {
   font-size: 1.5rem;
 }
 
-#instructionsTitle {
+#instructions-title {
   font-size: 1.5rem;
   margin-top: 1.5rem;
 }
 
-#pressButton {
+#press-button {
   font-size: 1.5rem;
   position: relative;
   top: 6rem;
@@ -42,23 +42,23 @@ body {
   margin-top: 2rem;
 }
 
-#rockSpan {
+#rock-span {
   color: gray;
 }
 
-#paperSpan {
+#paper-span {
   color: white;
 }
 
-#scissorsSpan {
+#scissors-span {
   color: chocolate;
 }
 
-#newgameBtnDiv  {
+#newgame-btn-div  {
   text-align: center;
 }
 
-#newgameBtn {
+#newgame-btn {
   font-size: 3rem;
   width: 20rem;
   margin-top: 10rem;
@@ -68,7 +68,7 @@ body {
   background-color: black;
 }
 
-#newgameBtn:hover {
+#newgame-btn:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -86,7 +86,7 @@ img {
   flex-wrap: wrap;
 }
 
-#choiceContainer {
+#choice-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -139,7 +139,7 @@ img {
   font-size: 3rem;
 }
 
-#resetBtn, #homeBtn {
+#reset-btn, #home-btn {
   font-size: 2rem;
   padding: 1rem;
   border-radius: 1rem;
@@ -148,12 +148,12 @@ img {
   text-align: center;
 }
 
-#resetBtn:hover, #homeBtn:hover {
+#reset-btn:hover, #home-btn:hover {
   opacity: 0.8;
   cursor: pointer;
 }
 
-#resetDiv {
+#reset-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,7 +163,7 @@ img {
   margin-top: 10rem;
 }
 
-#roundResults {
+#round-results {
   font-size: 2rem;
   display: flex;
   justify-content: center;
@@ -178,7 +178,7 @@ img {
     background-size: 12rem;
   }
 
-  #welcomeTitle {
+  #welcome-title {
     font-size: 1rem;
   }
 
@@ -186,7 +186,7 @@ img {
     width: 40rem;
   }
 
-  #newgameBtn {
+  #newgame-btn {
     width: 20rem;
     font-size: 2rem;
   }
@@ -210,7 +210,7 @@ img {
     width: 35rem;
   }
 
-  #newgameBtn {
+  #newgame-btn {
     width: 18rem;
     font-size: 1.8rem;
   }
@@ -227,15 +227,15 @@ img {
     width: 3rem;
   }
 
-  #choiceContainer {
+  #choice-container {
     margin-top: 10rem;
   }
 
-  #resetBtn, #homeBtn {
+  #reset-btn, #home-btn {
     margin-top: -3rem;
   }
 
-  #roundResults {
+  #round-results {
     font-size: 1.5rem;
     text-align: center;
   }
@@ -249,7 +249,7 @@ img {
     text-align: center;
   }
 
-  #instructionsTitle {
+  #instructions-title {
     font-size: 1.2rem;
   }
 
@@ -257,7 +257,7 @@ img {
     font-size: 1.2rem;
   }
 
-  #newgameBtn {
+  #newgame-btn {
     font-size: 1rem;
     width: 15rem;
   }
@@ -266,7 +266,7 @@ img {
     font-size: 1rem;
   }
 
-  #roundResults {
+  #round-results {
     text-align: center;
   }
 }
@@ -296,29 +296,29 @@ img {
     font-size: 1.3rem;
   }
 
-  #resetBtn {
+  #reset-btn {
     position: relative;
     bottom: 7rem;
     font-size: 1rem;
   }
 
-  #homeBtn {
+  #home-btn {
     position: relative;
     bottom: 3rem;
     font-size: 1rem;
   }
 
-  #choiceContainer {
+  #choice-container {
     margin-bottom: 2rem;
   }
 
-  #roundResults {
+  #round-results {
     text-align: center;
     font-size: 1.1rem;
     margin-bottom: -2rem;
   }
 
-  #startContainer {
+  #start-container {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -341,12 +341,12 @@ img {
     
   }
   
-  #pressButton {
+  #press-button {
     position: relative;
     top: 2rem;
   }
 
-  #newgameBtn {
+  #newgame-btn {
     font-size: 1rem;
     width: 10rem;
     padding: 0.5rem;

@@ -1,18 +1,18 @@
 // Query Selectors
-const newGame = document.querySelector('#newgameBtn');
-const startContainer = document.querySelector('#startContainer');
+const newGame = document.querySelector('#newgame-btn');
+const startContainer = document.querySelector('#start-container');
 const container = document.querySelector('#container');
-const choiceContainer = document.querySelector('#choiceContainer');
-const resetDiv = document.querySelector('#resetDiv');
+const choiceContainer = document.querySelector('#choice-container');
+const resetDiv = document.querySelector('#reset-div');
 const body = document.querySelector('body');
 
 
-const returnHomeBtn = document.querySelector('#homeBtn')
+const returnHomeBtn = document.querySelector('#home-btn')
 const rockBtn = document.querySelector('#rock');
 const paperBtn = document.querySelector('#paper');
 const scissorsBtn = document.querySelector('#scissors');
-const resetBtn = document.querySelector('#resetBtn');
-let roundResultsText = document.querySelector('#roundResults');
+const resetBtn = document.querySelector('#reset-btn');
+let roundResultsText = document.querySelector('#round-results');
 let roundCounterText = document.querySelector('#counter');
 let playerScoreText = document.querySelector('#player');
 let computerScoreText = document.querySelector('#computer');
