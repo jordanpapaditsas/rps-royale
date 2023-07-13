@@ -84,7 +84,7 @@ body {
   flex: 1;
   font-size: 1.2rem;
   position: relative;
-  top: 7rem;
+  top: 3rem;
 }
 
 /* Start game settings */
@@ -409,7 +409,7 @@ img {
 
 /* Extra */
 @media (max-width: 425px) {
-  
+
   body {
     background-size: 10rem;
   }
