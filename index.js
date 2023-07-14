@@ -119,10 +119,10 @@ function playRound(event) {
   roundCounterText.innerHTML = '<b>Round:</b> ' + roundCounter;
   if (playerScore === 5 || computerScore === 5 || tieScore === 5) {
     declareGameWinner();
-    // declareWinner(); 
   };
 };
 
+// Declares a game winner at 5 points
 function declareGameWinner() {
   let winner = '';
   if (playerScore === 5) {
@@ -161,15 +161,3 @@ function resetGame() {
   roundResultsText.innerHTML = roundResults;
 };
 
-// function declareWinner() {
-//   if (playerScore === 5) {
-//     roundResultsText.innerHTML = 'You won the game!';
-//   };
-//   if (computerScore === 5) {
-//     roundResultsText.innerHTML = 'Computer won the game!';
-    
-//   };
-//   if (tieScore === 5) {
-//     roundResultsText.innerHTML = 'Its a draw!';
-//   };
-// };
