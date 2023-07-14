@@ -15,9 +15,10 @@ body {
   background-size: calc(20rem);
   background-color: #9fc5e9;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #welcome-title {
@@ -79,8 +80,8 @@ body {
 
 #copyright {
   display: flex;
-  align-items: center; 
   justify-content: center;
+  align-items: center;
   flex: 1;
   font-size: 1.2rem;
 }
