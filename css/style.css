@@ -79,12 +79,10 @@ body {
 
 #copyright {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  align-items: center; 
+  justify-content: center;
   flex: 1;
   font-size: 1.2rem;
-  position: relative;
-  top: 3rem;
 }
 
 /* Start game settings */
@@ -98,6 +96,7 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  /* flex: 1; */
 }
 
 #choice-container {
@@ -105,8 +104,8 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 15rem;
   gap: 3rem;
+  flex: 1;
 }
 
 #rock {
@@ -172,9 +171,8 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex: 1;
   gap: 1rem;
-  margin-top: 10rem;
 }
 
 #round-results {
@@ -182,72 +180,31 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 5rem;
+  flex: 1;
 }
 
-@media (max-width: 1280px) {
-
-  #copyright {
-    display: flex;
-    flex: 1;
-    margin-bottom: 15rem;
+/* Large screens */
+@media (max-width: 1300px) {
+  
+  #title {
+    font-size: 2rem;
   }
-
-  #reset-div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-}
-
-@media (max-width: 1200px) {
-
-  body {
-    background-size: 12rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  #welcome-title {
-    font-size: 1rem;
+  
+  #instructions-title {
+    font-size: 1.4rem;
   }
 
   #rules {
-    width: 40rem;
+    font-size: 1.1rem;
   }
-
-  #newgame-btn {
-    width: 20rem;
-    font-size: 2rem;
-  }
-
-  #container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-}
-
-@media (max-width: 1024px) {
 
   body {
     background-size: 15rem;
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-  }
-
-  #rules {
-    width: 35rem;
   }
 
   #newgame-btn {
-    width: 18rem;
-    font-size: 1.8rem;
+    font-size: 1rem;
+    width: 12rem;
   }
 
   #score {
@@ -255,171 +212,133 @@ img {
   }
 
   #counter {
-    font-size: 1.8rem;
-  }
-
-  img {
-    width: 3rem;
-  }
-
-  #choice-container {
-    margin-top: 10rem;
-  }
-
-  #reset-btn, #home-btn {
-    margin-top: -3rem;
+    font-size: 2rem;
   }
 
   #round-results {
-    font-size: 1.5rem;
     text-align: center;
   }
 }
 
-/* Medium size devices */
-@media (max-width: 995px) {
+/* Medium screens */
+@media (max-width: 940px) {
 
   #title {
-    width: 50rem;
     font-size: 1.5rem;
     text-align: center;
   }
 
   #instructions-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   #rules {
-    font-size: 1.2rem;
-    width: 45%;
-  }
-
-  #newgame-btn {
-    font-size: 1rem;
-    width: 15rem;
-  }
-
-  #score {
     font-size: 1rem;
   }
 
-  #round-results {
-    text-align: center;
-  }
-  
   body {
     background-size: 12rem;
   }
 
-}
-
-/* Small size devices */
-@media (max-width: 530px) {
-
-  #rock, #paper, #scissors{
-    width: 9.5rem;
-    height: 7.5rem;
-  }
-
-  body, html {
-    flex-wrap: nowrap;
-  }
-
-  #container {
-    flex-wrap: nowrap;
+  #newgame-btn {
+    font-size: 0.8rem;
+    width: 11rem;
   }
 
   #score {
-    flex-wrap: nowrap;
-    flex-direction: column;
-    gap: .2rem;
+    font-size: 1rem;
   }
 
   #counter {
     font-size: 1.3rem;
   }
 
-  #reset-btn {
-    position: relative;
-    bottom: 7rem;
-    font-size: 1rem;
-  }
-
-  #home-btn {
-    position: relative;
-    bottom: 3rem;
-    font-size: 1rem;
-  }
-
-  #choice-container {
-    margin-bottom: 2rem;
-  }
-
   #round-results {
     text-align: center;
-    font-size: 1.1rem;
-    margin-bottom: -2rem;
   }
 
-  #start-container {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  #choice-container p {
+    font-size: 0.7rem;
   }
 
-  #title {
-    font-size: 1.4rem;
-    width: 50%;
+  img {
+    width: 4rem;
+    height: auto;
   }
 
-  #rules {
-    width: 65%;
-    font-size: 1.1rem;
-  }
-
-  body {
-    background-position: bottom;
-    background-size: 11rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  #press-button-text {
-    position: relative;
-    top: 4rem;
-  }
-
-  #newgame-btn {
+  #reset-btn, #home-btn {
     font-size: 1rem;
-    width: 10rem;
-    padding: 0.5rem;
-    position: relative;
-    bottom: 3rem;
-  }
-
-  #copyright {
-    position: absolute;
-    top: 51rem;
   }
 }
 
-/* Extra */
-@media (max-width: 425px) {
+/* Small screens */
+@media (max-width: 620px) {
 
-  body {
-    background-size: 10rem;
+  #title {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  #instructions-title {
+    font-size: 1rem;
   }
 
   #rules {
-    width: 90%;
+    font-size: 0.8rem;
+  }
+
+  #press-button-text {
+    font-size: 1rem;
+  }
+
+  body {
+    background-size: 6rem;
+  }
+
+  #newgame-btn {
+    font-size: 0.8rem;
+    width: 7rem;
+  }
+
+  #score {
+    font-size: 1rem;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #counter {
+    font-size: 1.3rem;
+  }
+
+  #round-results {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  #choice-container p {
+    font-size: 0.6rem;
+  }
+
+  img {
+    width: 3rem;
+  }
+
+  #rock, #paper, #scissors {
+    width: 10rem;
+    height: 7rem;
+  }
+
+  button {
+    font-size: 0.5rem;
+  }
+
+  #reset-btn, #home-btn {
+    font-size: 1rem;
   }
 
   #copyright {
-    font-size: .8rem;
-    margin-top: 0.5rem;
+    font-size: 1rem;
   }
 }
