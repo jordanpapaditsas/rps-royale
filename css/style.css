@@ -299,6 +299,7 @@ img {
   #newgame-btn {
     font-size: 0.8rem;
     width: 7rem;
+    margin-top: 9rem;
   }
 
   #score {
@@ -341,5 +342,6 @@ img {
 
   #copyright {
     font-size: 1rem;
+    margin-bottom: 5rem;
   }
 }
