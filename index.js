@@ -7,7 +7,6 @@ const resetDiv = document.querySelector('#reset-div');
 const body = document.querySelector('body');
 const copyright = document.querySelector('#copyright');
 
-
 const returnHomeBtn = document.querySelector('#home-btn')
 const rockBtn = document.querySelector('#rock');
 const paperBtn = document.querySelector('#paper');
@@ -18,7 +17,6 @@ let roundCounterText = document.querySelector('#counter');
 let playerScoreText = document.querySelector('#player');
 let computerScoreText = document.querySelector('#computer');
 let tieScoreText = document.querySelector('#tie');
-
 
 // Initializers
 container.style.display = 'none';
@@ -63,9 +61,7 @@ function startGame() {
   body.style.backgroundImage = 'none';
   copyright.style.display = 'none';
 
-
-
-  roundResultsText.style.display = '';
+  roundResultsText.style.cssText = 'border: 1px solid black; width: 40rem; text-align: center;';
   roundCounter = 1;
   playerScore = 0;
   computerScore = 0;
@@ -131,7 +127,7 @@ function declareGameWinner() {
     winner = 'Computer demolished you!';
   } else if (tieScore === 5) {
     winner = 'Its a draw!';
-  }
+  };
 
   roundResultsText.innerHTML = `The match is over, ${winner}`;
 
@@ -145,7 +141,6 @@ function declareGameWinner() {
   computerScoreText.textContent = 'Computer points: ' + computerScore;
   tieScoreText.textContent = 'Tie points: ' + tieScore;
 };
-
 
 // Resets the game
 function resetGame() {
