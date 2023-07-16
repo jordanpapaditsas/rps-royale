@@ -177,11 +177,17 @@ img {
 }
 
 #round-results {
-  font-size: 2rem;
   display: flex;
+  font-size: 1.6rem;
+  text-align: center;
   justify-content: center;
   align-items: center;
   flex: 1;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: black;
+  color: white;
 }
 
 /* Large screens */
@@ -218,6 +224,7 @@ img {
 
   #round-results {
     text-align: center;
+    font-size: 1.3rem;
   }
 }
 
@@ -260,6 +267,10 @@ img {
 
   #choice-container p {
     font-size: 0.7rem;
+  }
+
+  #rock, #paper, #scissors {
+    width: 12rem;
   }
 
   img {
@@ -328,7 +339,7 @@ img {
   }
 
   #rock, #paper, #scissors {
-    width: 10rem;
+    width: 9rem;
     height: 7rem;
   }
 
@@ -343,5 +354,17 @@ img {
   #copyright {
     font-size: 1rem;
     margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 380px) {
+
+  #rock, #paper, #scissors {
+    width: 7rem;
+    height: 8rem;
+  }
+
+  #round-results {
+    font-size: 0.8rem;
   }
 }

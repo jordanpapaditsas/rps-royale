@@ -29,6 +29,7 @@ let playerScore = 0;
 let computerScore = 0;
 let tieScore = 0;
 let roundResults = '';
+roundResultsText.style.display = 'none';
 
 // Event listeners
 newGame.addEventListener('click', startGame);
@@ -46,12 +47,12 @@ function returnToHome() {
 
  startContainer.style.display = '';
  body.style.backgroundImage = '';
- roundResultsText.style.display = 'none';
  copyright.style.display = 'flex';
+ roundResultsText.style.display = 'none';
 };
 
 // Starts the game
-function startGame() {
+function startGame(e) {
   startContainer.style.display = 'none';
   container.style.display = 'flex';
   choiceContainer.style.display = 'flex';
@@ -60,13 +61,13 @@ function startGame() {
   body.style.flexDirection = 'column';
   body.style.backgroundImage = 'none';
   copyright.style.display = 'none';
+  roundResultsText.style.display = 'none';  // this should be flex normally
 
-  roundResultsText.style.cssText = 'border: 1px solid black; width: 40rem; text-align: center;';
   roundCounter = 1;
   playerScore = 0;
   computerScore = 0;
   tieScore = 0;
-  roundResults = '';
+
 
   roundCounterText.innerHTML = '<b>Round:<b> ' + roundCounter;
   playerScoreText.textContent = 'Player points: ' + playerScore;
@@ -89,6 +90,7 @@ function playRound(event) {
   if ((playerSelection === 'rock' && computerSelection === 'rock') ||
   (playerSelection === 'paper' && computerSelection === 'paper') ||
   (playerSelection === 'scissors' && computerSelection === 'scissors')) {
+    roundResultsText.style.display = 'flex';
     roundResultsText.innerHTML = `You choose: ${playerSelection} <br> 
     Computer chooses: ${computerSelection} <br> Its a tie! Choose again!`;
     tieScore++;
@@ -97,6 +99,7 @@ function playRound(event) {
   } else if ((playerSelection === 'rock' && computerSelection === 'paper') ||
   (playerSelection === 'paper' && computerSelection === 'scissors') ||
   (playerSelection === 'scissors' && computerSelection === 'rock')) {
+    roundResultsText.style.display = 'flex';
     roundResultsText.innerHTML = `You choose: ${playerSelection} <br> 
     Computer chooses: ${computerSelection} <br> Computer wins the round! Choose again!`;
     computerScore++;
@@ -105,6 +108,7 @@ function playRound(event) {
   } else if ((playerSelection === 'rock' && computerSelection === 'scissors') ||
   (playerSelection === 'paper' && computerSelection === 'rock') ||
   (playerSelection === 'scissors' && computerSelection === 'paper')) {
+    roundResultsText.style.display = 'flex';
     roundResultsText.innerHTML = `You choose: ${playerSelection} <br> 
     Computer chooses: ${computerSelection} <br> You win the round! Choose again!`;
     playerScore++;
@@ -148,6 +152,7 @@ function resetGame() {
   playerScore = 0;
   computerScore = 0;
   tieScore = 0;
+  roundResultsText.style.display = 'none';
 
   roundCounterText.innerHTML = '<b>Round:<b> ' + roundCounter;
   playerScoreText.textContent = 'Player points: ' + playerScore;
