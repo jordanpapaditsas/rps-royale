@@ -1,4 +1,4 @@
-// Query Selectors
+// Initializing variables and selecting elements
 const newGame = document.querySelector('#newgame-btn');
 const startContainer = document.querySelector('#start-container');
 const container = document.querySelector('#container');
@@ -18,11 +18,9 @@ let playerScoreText = document.querySelector('#player');
 let computerScoreText = document.querySelector('#computer');
 let tieScoreText = document.querySelector('#tie');
 
-// Initializers
 container.style.display = 'none';
 choiceContainer.style.display = 'none';
 resetDiv.style.display = 'none';
-
 const computerSelection = getComputerChoice();
 let roundCounter = 1;
 let playerScore = 0;
@@ -38,18 +36,6 @@ paperBtn.addEventListener('click', playRound);
 scissorsBtn.addEventListener('click', playRound);
 resetBtn.addEventListener('click', resetGame);
 returnHomeBtn.addEventListener('click', returnToHome);
-
-// Returns back to home page
-function returnToHome() {
- container.style.display = 'none';
- choiceContainer.style.display = 'none';
- resetDiv.style.display = 'none';
-
- startContainer.style.display = '';
- body.style.backgroundImage = '';
- copyright.style.display = 'flex';
- roundResultsText.style.display = 'none';
-};
 
 // Starts the game
 function startGame(e) {
@@ -160,4 +146,16 @@ function resetGame() {
   tieScoreText.textContent = 'Tie points: ' + tieScore;
   roundResultsText.innerHTML = roundResults;
 };
+
+// Returns back to home page
+function returnToHome() {
+  container.style.display = 'none';
+  choiceContainer.style.display = 'none';
+  resetDiv.style.display = 'none';
+ 
+  startContainer.style.display = '';
+  body.style.backgroundImage = '';
+  copyright.style.display = 'flex';
+  roundResultsText.style.display = 'none';
+ };
 
