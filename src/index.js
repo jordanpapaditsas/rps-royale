@@ -66,7 +66,7 @@ function startGame(e) {
 function getComputerChoice() {
   const compChoice = ['rock', 'paper', 'scissors'];
   return compChoice[Math.floor(Math.random() * compChoice.length)];
-};
+}
 
 // Starts the round, gets the players choice, and a random computers choice, and declares the winner of the round.
 function playRound(event) {
@@ -99,14 +99,14 @@ function playRound(event) {
     Computer chooses: ${computerSelection} <br> You win the round! Choose again!`;
     playerScore++;
     playerScoreText.textContent = 'Player points: ' + playerScore;
-  };
+  }
 
   roundCounter++;
   roundCounterText.innerHTML = '<b>Round:</b> ' + roundCounter;
   if (playerScore === 5 || computerScore === 5 || tieScore === 5) {
     declareGameWinner();
-  };
-};
+  }
+}
 
 // Declares a game winner at 5 points
 function declareGameWinner() {
@@ -117,7 +117,7 @@ function declareGameWinner() {
     winner = 'Computer demolished you!';
   } else if (tieScore === 5) {
     winner = 'Its a draw!';
-  };
+  }
 
   roundResultsText.innerHTML = `The match is over, ${winner}`;
 
@@ -130,7 +130,7 @@ function declareGameWinner() {
   playerScoreText.textContent = 'Player points: ' + playerScore;
   computerScoreText.textContent = 'Computer points: ' + computerScore;
   tieScoreText.textContent = 'Tie points: ' + tieScore;
-};
+}
 
 // Resets the game
 function resetGame() {
@@ -145,7 +145,7 @@ function resetGame() {
   computerScoreText.textContent = 'Computer points: ' + computerScore;
   tieScoreText.textContent = 'Tie points: ' + tieScore;
   roundResultsText.innerHTML = roundResults;
-};
+}
 
 // Returns back to home page
 function returnToHome() {
@@ -157,5 +157,5 @@ function returnToHome() {
   body.style.backgroundImage = '';
   copyright.style.display = 'flex';
   roundResultsText.style.display = 'none';
- };
+ }
 
