@@ -1,4 +1,4 @@
-# Rock-Paper-Scissors App
+# RPS Royale
 
 ## Description  
 The Rock, Paper, and Scissors game is an enjoyable and straightforward game where both players choose between:  
@@ -6,7 +6,7 @@ The Rock, Paper, and Scissors game is an enjoyable and straightforward game wher
 a ***tie***, or a ***win*** for one player and a ***loss*** for the other player.  
 
 ## Live Preview
-**https://jordanpapaditsas.github.io/rock-paper-scissors-app/**
+**https://jordanpapaditsas.github.io/rps-royale/**
 
 ## Rules  
 In this game, the player must select one option from the following: **rock**, **paper**, or **scissors**.   
@@ -19,11 +19,11 @@ In the event of a ***tie***, no points will be awarded.
 1. Clone the repository:
 
    ```bash
-    git clone https://github.com/jordanpapaditsas/rock-paper-scissors-app.git
+    git clone https://github.com/jordanpapaditsas/rps-royale.git
    ```
 2. Navigate to the project's folder
    ```bash
-   cd rock-paper-scissors-app 
+   cd rps-royale 
    ```
 3. After navigating to the project's folder, you can run the application by opening the index.html file  
 in your preferred web browser 
