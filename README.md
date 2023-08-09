@@ -24,7 +24,7 @@ In the event of a ***tie***, no points will be awarded.
 
 ## Getting Started
 
-Follow these steps to get the dashboard up and running on your local machine:
+Follow these steps to get the rps game up and running on your local machine:
 
 1. Clone this repository: `git clone https://github.com/your-username/rps-royale.git`
 2. Open the `index.html` file in your preferred web browser.
